@@ -27,21 +27,64 @@ public class TelaLogin extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        JLabelFundoLogin = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        jLabelLogo = new javax.swing.JLabel();
+        jButtonAcessar = new javax.swing.JButton();
+        jLabelUsuario = new javax.swing.JLabel();
+        jLabelSenha = new javax.swing.JLabel();
+        jButtonSair = new javax.swing.JButton();
+        jTextFieldUsuario = new javax.swing.JTextField();
+        jPasswordFieldSenha = new javax.swing.JPasswordField();
+
+        jButton1.setText("jButton1");
+
+        jButton2.setText("jButton2");
+
+        JLabelFundoLogin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/fundotelaLogin.png"))); // NOI18N
+
+        jTextField1.setText("jTextField1");
+
+        jLabelLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Logo-TelaPrincipal.png"))); // NOI18N
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(null);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 600, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 432, Short.MAX_VALUE)
-        );
+        jButtonAcessar.setText("Acessar");
+        getContentPane().add(jButtonAcessar);
+        jButtonAcessar.setBounds(280, 200, 71, 23);
 
-        pack();
+        jLabelUsuario.setText("Usuário:");
+        getContentPane().add(jLabelUsuario);
+        jLabelUsuario.setBounds(220, 140, 70, 14);
+
+        jLabelSenha.setText("Senha:");
+        getContentPane().add(jLabelSenha);
+        jLabelSenha.setBounds(220, 170, 34, 14);
+
+        jButtonSair.setText("Sair");
+        getContentPane().add(jButtonSair);
+        jButtonSair.setBounds(360, 200, 73, 23);
+        getContentPane().add(jTextFieldUsuario);
+        jTextFieldUsuario.setBounds(280, 140, 180, 20);
+
+        jPasswordFieldSenha.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jPasswordFieldSenhaActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jPasswordFieldSenha);
+        jPasswordFieldSenha.setBounds(280, 170, 180, 20);
+
+        setSize(new java.awt.Dimension(516, 414));
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jPasswordFieldSenhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPasswordFieldSenhaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPasswordFieldSenhaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -79,5 +122,16 @@ public class TelaLogin extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel JLabelFundoLogin;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButtonAcessar;
+    private javax.swing.JButton jButtonSair;
+    private javax.swing.JLabel jLabelLogo;
+    private javax.swing.JLabel jLabelSenha;
+    private javax.swing.JLabel jLabelUsuario;
+    private javax.swing.JPasswordField jPasswordFieldSenha;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextFieldUsuario;
     // End of variables declaration//GEN-END:variables
 }
