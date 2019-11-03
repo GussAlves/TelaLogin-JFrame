@@ -34,6 +34,7 @@ public class TelaLogin extends javax.swing.JFrame {
         jTextFieldUsuario = new javax.swing.JTextField();
         jPasswordFieldSenha = new javax.swing.JPasswordField();
         jLabelLogo = new javax.swing.JLabel();
+        jButtonNovoUsuario = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -74,6 +75,15 @@ public class TelaLogin extends javax.swing.JFrame {
         getContentPane().add(jLabelLogo);
         jLabelLogo.setBounds(70, 50, 360, 130);
 
+        jButtonNovoUsuario.setText("Novo usuário ");
+        jButtonNovoUsuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonNovoUsuarioActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButtonNovoUsuario);
+        jButtonNovoUsuario.setBounds(180, 320, 180, 20);
+
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/fundo_telaprincipal.jpg"))); // NOI18N
         getContentPane().add(jLabel1);
         jLabel1.setBounds(0, 0, 500, 370);
@@ -91,6 +101,12 @@ public class TelaLogin extends javax.swing.JFrame {
         tela.setVisible(true);
         dispose();
     }//GEN-LAST:event_jButtonAcessarActionPerformed
+
+    private void jButtonNovoUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonNovoUsuarioActionPerformed
+        TelaCadastro novoUsuario = new TelaCadastro();
+        novoUsuario.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jButtonNovoUsuarioActionPerformed
 
     /**
      * @param args the command line arguments
@@ -129,6 +145,7 @@ public class TelaLogin extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButtonAcessar;
+    private javax.swing.JButton jButtonNovoUsuario;
     private javax.swing.JButton jButtonSair;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabelLogo;
